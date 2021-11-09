@@ -138,7 +138,7 @@ ms::SurfaceStack::SurfaceStack(
 {
 }
 
-ms::SurfaceStack::~SurfaceStack() noexcept(true)
+ms::SurfaceStack::~SurfaceStack() noexcept
 {
     RecursiveWriteLock lg(guard);
     for (auto const& layer : surface_layers)

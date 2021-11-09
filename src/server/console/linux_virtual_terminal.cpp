@@ -405,7 +405,7 @@ mir::LinuxVirtualTerminal::LinuxVirtualTerminal(
             }));
 }
 
-mir::LinuxVirtualTerminal::~LinuxVirtualTerminal() noexcept(true)
+mir::LinuxVirtualTerminal::~LinuxVirtualTerminal() noexcept
 {
     restore();
 }

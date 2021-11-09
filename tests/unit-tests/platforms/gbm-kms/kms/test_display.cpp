@@ -75,7 +75,7 @@ struct MockLogger : public ml::Logger
     MOCK_METHOD3(log,
                  void(ml::Severity, const std::string&, const std::string&));
 
-    ~MockLogger() noexcept(true) {}
+    ~MockLogger() noexcept {}
 };
 
 class MesaDisplayTest : public ::testing::Test

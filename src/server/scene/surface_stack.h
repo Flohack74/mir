@@ -75,7 +75,7 @@ class SurfaceStack :
 public:
     explicit SurfaceStack(
         std::shared_ptr<SceneReport> const& report);
-    virtual ~SurfaceStack() noexcept(true);
+    virtual ~SurfaceStack() noexcept;
 
     // From Scene
     compositor::SceneElementSequence scene_elements_for(compositor::CompositorID id) override;
