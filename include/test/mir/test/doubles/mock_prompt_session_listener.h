@@ -32,7 +32,7 @@ namespace doubles
 
 struct MockPromptSessionListener : public scene::PromptSessionListener
 {
-    virtual ~MockPromptSessionListener() noexcept(true) {}
+    virtual ~MockPromptSessionListener() noexcept {}
 
     MOCK_METHOD1(starting, void(std::shared_ptr<scene::PromptSession> const&));
     MOCK_METHOD1(stopping, void(std::shared_ptr<scene::PromptSession> const&));

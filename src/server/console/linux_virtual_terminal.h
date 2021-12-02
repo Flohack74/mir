@@ -86,7 +86,7 @@ public:
         int vt_number,
         EmergencyCleanupRegistry& emergency_cleanup,
         std::shared_ptr<graphics::DisplayReport> const& report);
-    ~LinuxVirtualTerminal() noexcept(true);
+    ~LinuxVirtualTerminal() noexcept;
 
     void register_switch_handlers(
         graphics::EventHandlerRegister& handlers,
